@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form Registrasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Free Registration</h1>
+    <form>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama"><br><br>
+  
+      <label for="tgl_lahir">Tgl Lahir:</label>
+      <input type="date" id="tgl_lahir" name="tgl_lahir"><br><br>
+  
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br><br>
+  
+      <label for="kota">Kota:</label>
+      <input type="text" id="kota" name="kota"><br><br>
+      
+      <label for="pekerjaan">Pekerjaan:</label>
+      <select id="pekerjaan" name="pekerjaan">
+        <option value="Tani">Tani</option>
+        <option value="Sopir">Sopir</option>
+        <option value="PNS">PNS</option>
+        <option value="Swasta">Swasta</option>
+        <option value="Programmer">Programmer</option>
+        <option value="Mahasiswa">Mahasiswa</option>
+        <option value="Wiraswasta">Wiraswasta</option>
+      </select><br><br>
+      
+      <label for="gender" class="gender-container">Jenis Kelamin:
+          <div class="gender-container">
+              <input type="radio" id="laki-laki" name="kelamin" value="Laki-laki" class="inline-radio">
+              <label for="laki-laki">Laki-laki</label>
+          </div>
+          <div class="gender-container">
+              <input type="radio" id="perempuan" name="kelamin" value="Perempuan" class="inline-radio">
+              <label for="perempuan">Perempuan</label> 
+          </div>    
+      </label>
+      
+      <legend>Hobby:</legend>
+      <div class="inline-hobby">
+          <div class="hobby-checkbox">
+              <input type="checkbox" id="hobbi_baca" name="hobbi[]" value="Membaca">
+              <label for="hobbi_baca">Reading</label><br>
+          </div>
+          <div class="hobby-checkbox">
+              <input type="checkbox" id="hobbi_olahraga" name="hobbi[]" value="Olahraga">
+              <label for="hobbi_olahraga">Sport</label><br>
+          </div>
+          <div class="hobby-checkbox">
+              <input type="checkbox" id="hobbi_nyanyi" name="hobbi[]" value="Menyanyi">
+              <label for="hobbi_nyanyi">Singing</label><br>
+          </div>
+          <div class="hobby-checkbox">
+              <input type="checkbox" id="hobbi_travel" name="hobbi[]" value="Traveling">
+              <label for="hobbi_travel">Traveling</label><br>
+          </div>
+      </div>
+      
+      <div class="button-right">
+          <input type="submit" value="Kirim">
+          <input type="reset" value="Cancel">
+      </div>
+      
+    </form>
+  </body>
+</html>
+
